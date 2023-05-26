@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+:root{
+    --red:  #FF0000;
+    --black: #000000;
+    --blue: #5BA7FF;
+    --white: #FFFFFF;
+    --black :#000000;
+    
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    padding-top: 5.5rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+header .logo{
+    color: #000000;
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+
+header .navbar a{
+
+    font-size: 1.30rem;
+    border-radius: .5rem;
+    padding:  .5rem 1.5rem;
+    color:  #000000;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:  #FFFFFF;
+    background: var(--blue);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:#FFFFFF;
+    border-radius: 50%;
+    
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--red);
+    background: #FFFFFF;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+
+.carousel-item img{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 90vh;
+    filter: brightness(70%);
+}
+
+.carousel-inner a{
+    color: #fff;
+    font-family: 'poppins';
+    text-decoration: none;
+}
+
+.carousel-inner a:hover{
+    color: #979A9A;
+}
+
+
+.box{
+    background: rgba(0,0,0,0.5);
+    width: 100 %;
+    padding: 25px;
+}
+
+.box p{
+    text-align: justify;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.update{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.Graph{
+    height: 300px;
+    width: 500px;
+    display: inline;
+    color: white;
+}
+
+.chart{
+    width: 600px;
+    height: 300px;
+    display: block;
+}
+
+.numbers{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.numbers li{
+    list-style: none;
+    height: 150px;
+    position: relative;
+    bottom: 145px;
+}
+
+.numbers span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px
+}
+
+.bars{
+    color: #000;
+    font-size: 12px;
+    font-weight: 100px;
+    background: #100;
+    margin: 0;
+    padding:0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px #fff;
+    border-size: 400%;
+    border-radius: 5px;
+
+}
+
+.bars li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+}
+
+.bars span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;  
+    text-align: center;
+}
+
+.bars .bar{
+    display: block;
+    background: #55EFC4;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(23, 192, 235, 0.5);
+    transition: 0.5s;
+    transition-property: background , box-shadow;
+}
+
+.bars .bar:hover{
+    background: #196a7e;
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+}
+
+.bars .bar:before{
+    color: #fff;
+    content: attr(data-percentage)'%';
+    position: relative;
+    bottom: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fafb;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #80D4FF;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #000000;
+}
+
+@media all and (max-width: 780px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .container {
+        padding: 0px 20px;
+    }
+}

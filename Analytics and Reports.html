@@ -1,0 +1,105 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>Analytics And Reports</title>
+        <link rel="stylesheet" href="bar.css">
+        <link rel="stylesheet" type="text/css" href="Comment.css">
+         <link rel="shortcut icon" href="home-img1.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+            <header> 
+                                <a href="#" class="logo">Watch My Step</a>
+                                <nav class="navbar"> 
+                                        <a href="watch me step.html">home</a>
+                                        <a href="Blog.html">blog</a>
+                                        <a class="active"href="Analytics and Reports.html">Analytics and Reports</a>
+                                        <a href="Social Media.html">Social Media</a>
+                                        <a href="contact.html">Contact</a>
+                                        <a href="about pages.html">About Page</a>
+                                        <a href="user.html">User</a>
+                                </nav>
+                                <div class="icons">
+                                    <i class="fas fa-bars" id="menu-bars"></i>
+                                    <i class="fas fa-search" id="search-icon"></i>
+                                    <a href="#" class="fas fa-heart"></a>
+                                </div>
+                    </header>
+
+
+
+
+            <div class="chart">
+                <H1><center>Tourist Spot</center></H1>
+                <ul class="numbers">
+                    <li><span>100%</span></li>
+                    <li><span>75%</span></li>
+                    <li><span>50%</span></li>
+                </ul>
+                <ul class="bars">
+                    <li><div class="bar" data-percentage="85"></div><span>Palawan</span></li>
+                    <li><div class="bar" data-percentage="65"></div><span>Bacolod</span></li>
+                    <li><div class="bar" data-percentage="70"></div><span>Boracay<br></span></li>
+                    <li><div class="bar" data-percentage="90"></div><span>Siargao<br></span></li>
+                    <li><div class="bar" data-percentage="60"></div><span>Batanes<br></b></span></li>
+                    <li><div class="bar" data-percentage="80"></div><span>Bohol<br></b></span></li>
+                    <li><div class="bar" data-percentage="80"></div><span>Vigan<br></b></span></li>
+                    <li><div class="bar" data-percentage="80"></div><span>Cebu<br></b></span></li>
+                </ul>
+            </div>
+
+            <script type="text/javascript">
+                $(function(){
+                    $('.bars li .bar').each(function(key, bar){
+                        var percentage = $(this).data('percentage');
+                        $(this).animate({
+                            'height' : percentage + '%'
+                        },1000);
+                    });
+                });
+            </script>
+
+              <script type="text/javascript">
+                $(function(){
+                    $('.bars li .bar').each(function(key, bar){
+                        var percentage = $(this).data('percentage');
+                        $(this).animate({
+                            'height' : percentage + '%'
+                        },1000);
+                    });
+                });
+            </script>
+
+            <div class="container">
+                <h1>List of Philippine provinces by population</h1>
+                <div>
+                    <canvas id="pie-chart"></canvas>
+                </div>
+            </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            
+            <script>
+                new Chart(document.getElementById('pie-chart'), {
+                    type: 'pie',
+                    data: {
+                        labels: ["Metro Manila", "Cebu", " Cavite", "Bulacan", "Laguna", "Rizal", "Negros Occidental" ,"Pangasinan" ],
+                        datasets: [{
+                            backgroundColor: ["#e63946", "#254BDD",
+                                "#ffbe0b", "#1d3557", "#326998","#CD853F","#7FFF00","#2E8B57"
+  ],
+                            data: [13484462, 5151274,4344829,3708890, 3382193,3330143,3223955,3163190]
+                        }]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: 'Pie Chart for admin panel'
+                        },
+                        reponsive: true
+                    }
+                });
+            </script>
+
+    </body>
+</html>
